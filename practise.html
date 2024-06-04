@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+  rel="stylesheet">
+  <title>practice project</title>
+
+<style>
+  
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      .practice{
+        width: 800px;
+        margin: 100px auto;
+        background-color: #087f5b;
+        border-radius: 8px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        gap: 84px;
+        padding-left: 86px;
+        padding-right: 84px;
+        position: relative;
+      }
+      img{
+        height: 200px;
+        border-radius: 6px;
+        transform: scale(1.5);
+        
+      }
+      
+      
+      
+      .testimonial-text{
+font-size: 18px;
+line-height: 1.5;
+color:  #e6fcf5;
+font-weight: 500;
+margin-bottom: 32px;
+      }
+      .testimonial-author{
+font-size: 14px;
+font-weight: 500;
+color: #e6fcf5;
+margin-bottom: 4px;
+      }
+      .testimonial-job{
+        font-size: 12px;
+font-weight: 500;
+color: #e6fcf5;
+      }
+  .btn{
+    background-color: #e6fcf5;
+    border: none;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+    .btn--left{
+   left: 0;
+   top: 50%;
+   transform: translate(-50% , -50%);
+    }
+    .btn--right{
+     right: 0;
+     top: 50%;
+     transform: translate(50% , -50%);
+    }
+    .dots{
+      position: absolute;
+      
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50% , 32px);
+      display: flex;
+      gap: 12px;
+    }
+    .dot{
+      height: 12px;
+      width: 12px;
+      background-color: #fff;
+        border: 2px solid #087f5b;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .dot--fill {
+        background-color: #087f5b;
+      }
+</style>
+</head>
+<body>
+  <div class="practice">
+    <img src="maria.jpg" alt="authors picture">
+    <blockquote class="text">
+     <p class="testimonial-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ab quos nesciunt voluptate pariatur est  
+
+     </p>
+     <p class="testimonial-author">
+      maria del amedas
+     </p>
+     <P class="testimonial-job">
+      senior product manager at EDP commercial
+     </P>
+    </blockquote>
+    <button class="btn btn--left">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="{1.5}"
+        stroke="currentColor"
+        class="btn-icon"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15.75 19.5 8.25 12l7.5-7.5"
+        />
+      </svg>
+    </button>
+    <button class="btn btn--right">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="btn-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </button>
+     <div class="dots">
+      <button class="dot dot--fill">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
+
+     </div>
+  </div>
+</body>
+</html>
